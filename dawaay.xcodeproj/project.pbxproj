@@ -20,6 +20,10 @@
 		88D511D6274ACE4B008165FE /* Patient+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D511D0274ACE4B008165FE /* Patient+CoreDataProperties.swift */; };
 		88D511D7274ACE4B008165FE /* Pharmacy+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D511D1274ACE4B008165FE /* Pharmacy+CoreDataClass.swift */; };
 		88D511D8274ACE4B008165FE /* Pharmacy+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D511D2274ACE4B008165FE /* Pharmacy+CoreDataProperties.swift */; };
+		AC00E28E274AD4A0003630AF /* OrderDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC00E28C274AD4A0003630AF /* OrderDetailsCell.swift */; };
+		AC00E28F274AD4A0003630AF /* OrderDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC00E28D274AD4A0003630AF /* OrderDetailsCell.xib */; };
+		AC00E298274ADD73003630AF /* ShowOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC00E296274ADD73003630AF /* ShowOrderCell.swift */; };
+		AC00E299274ADD73003630AF /* ShowOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC00E297274ADD73003630AF /* ShowOrderCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,10 @@
 		88D511D0274ACE4B008165FE /* Patient+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Patient+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		88D511D1274ACE4B008165FE /* Pharmacy+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pharmacy+CoreDataClass.swift"; sourceTree = "<group>"; };
 		88D511D2274ACE4B008165FE /* Pharmacy+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pharmacy+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		AC00E28C274AD4A0003630AF /* OrderDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsCell.swift; sourceTree = "<group>"; };
+		AC00E28D274AD4A0003630AF /* OrderDetailsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderDetailsCell.xib; sourceTree = "<group>"; };
+		AC00E296274ADD73003630AF /* ShowOrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowOrderCell.swift; sourceTree = "<group>"; };
+		AC00E297274ADD73003630AF /* ShowOrderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowOrderCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +88,10 @@
 				880D826D274A1E8700231AEB /* SceneDelegate.swift */,
 				880D826F274A1E8700231AEB /* ViewController.swift */,
 				880D8271274A1E8700231AEB /* Main.storyboard */,
+				AC00E296274ADD73003630AF /* ShowOrderCell.swift */,
+				AC00E297274ADD73003630AF /* ShowOrderCell.xib */,
+				AC00E28C274AD4A0003630AF /* OrderDetailsCell.swift */,
+				AC00E28D274AD4A0003630AF /* OrderDetailsCell.xib */,
 				880D8277274A1E8900231AEB /* Assets.xcassets */,
 				880D8279274A1E8900231AEB /* LaunchScreen.storyboard */,
 				880D827C274A1E8900231AEB /* Info.plist */,
@@ -147,8 +159,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				880D827B274A1E8900231AEB /* LaunchScreen.storyboard in Resources */,
+				AC00E299274ADD73003630AF /* ShowOrderCell.xib in Resources */,
 				880D8278274A1E8900231AEB /* Assets.xcassets in Resources */,
 				880D8273274A1E8700231AEB /* Main.storyboard in Resources */,
+				AC00E28F274AD4A0003630AF /* OrderDetailsCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,11 +178,13 @@
 				880D8270274A1E8700231AEB /* ViewController.swift in Sources */,
 				880D826C274A1E8700231AEB /* AppDelegate.swift in Sources */,
 				880D8276274A1E8700231AEB /* dawaay.xcdatamodeld in Sources */,
+				AC00E28E274AD4A0003630AF /* OrderDetailsCell.swift in Sources */,
 				88D511D7274ACE4B008165FE /* Pharmacy+CoreDataClass.swift in Sources */,
 				88D511D3274ACE4B008165FE /* Order+CoreDataClass.swift in Sources */,
 				88D511D6274ACE4B008165FE /* Patient+CoreDataProperties.swift in Sources */,
 				88D511D8274ACE4B008165FE /* Pharmacy+CoreDataProperties.swift in Sources */,
 				880D826E274A1E8700231AEB /* SceneDelegate.swift in Sources */,
+				AC00E298274ADD73003630AF /* ShowOrderCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
