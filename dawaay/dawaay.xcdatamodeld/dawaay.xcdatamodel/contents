@@ -1,24 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19206" systemVersion="21A559" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Patient" representedClassName="Patient" syncable="YES" codeGenerationType="class">
-        <attribute name="cityAndLocation" optional="YES" attributeType="String"/>
-        <attribute name="medicineName" optional="YES" attributeType="String"/>
-        <attribute name="passWord" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    <entity name="Order" representedClassName="Order" syncable="YES">
+        <attribute name="orderDate" optional="YES" attributeType="String"/>
+        <attribute name="orderId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="sataus" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="order" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Patient" inverseName="requset" inverseEntity="Patient"/>
+        <relationship name="requset" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Pharmacy" inverseName="requset" inverseEntity="Pharmacy"/>
+    </entity>
+    <entity name="Patient" representedClassName="Patient" syncable="YES">
+        <attribute name="medcineName" optional="YES" attributeType="String"/>
+        <attribute name="password" optional="YES" attributeType="String"/>
+        <attribute name="patientLocation" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="phoneNumber" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="qunatity" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="userName" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
-        <relationship name="order" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Pharmacy"/>
+        <attribute name="userName" optional="YES" attributeType="String"/>
+        <relationship name="requset" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Order" inverseName="order" inverseEntity="Order"/>
     </entity>
-    <entity name="Pharmacy" representedClassName="Pharmacy" syncable="YES" codeGenerationType="class">
-        <attribute name="drugsAvailable" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="drugsName" optional="YES" attributeType="String"/>
-        <attribute name="name" optional="YES" attributeType="String"/>
+    <entity name="Pharmacy" representedClassName="Pharmacy" syncable="YES">
+        <attribute name="drugsAvailable" optional="YES" attributeType="String"/>
+        <attribute name="drugsNames" optional="YES" attributeType="String"/>
         <attribute name="password" optional="YES" attributeType="String"/>
         <attribute name="status" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
-        <relationship name="order" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Patient"/>
+        <attribute name="usename" optional="YES" attributeType="String"/>
+        <relationship name="requset" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Order" inverseName="requset" inverseEntity="Order"/>
     </entity>
     <elements>
-        <element name="Patient" positionX="-8.4296875" positionY="-20.13671875" width="128" height="148"/>
-        <element name="Pharmacy" positionX="198.859375" positionY="69.34375" width="128" height="133"/>
+        <element name="Patient" positionX="-266.546875" positionY="-9" width="128" height="148"/>
+        <element name="Order" positionX="107.828125" positionY="6.74609375" width="128" height="118"/>
+        <element name="Pharmacy" positionX="88.0234375" positionY="214.99609375" width="128" height="133"/>
     </elements>
 </model>

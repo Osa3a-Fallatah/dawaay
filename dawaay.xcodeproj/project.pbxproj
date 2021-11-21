@@ -14,6 +14,12 @@
 		880D8276274A1E8700231AEB /* dawaay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 880D8274274A1E8700231AEB /* dawaay.xcdatamodeld */; };
 		880D8278274A1E8900231AEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 880D8277274A1E8900231AEB /* Assets.xcassets */; };
 		880D827B274A1E8900231AEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 880D8279274A1E8900231AEB /* LaunchScreen.storyboard */; };
+		88D511D3274ACE4B008165FE /* Order+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D511CD274ACE4B008165FE /* Order+CoreDataClass.swift */; };
+		88D511D4274ACE4B008165FE /* Order+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D511CE274ACE4B008165FE /* Order+CoreDataProperties.swift */; };
+		88D511D5274ACE4B008165FE /* Patient+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D511CF274ACE4B008165FE /* Patient+CoreDataClass.swift */; };
+		88D511D6274ACE4B008165FE /* Patient+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D511D0274ACE4B008165FE /* Patient+CoreDataProperties.swift */; };
+		88D511D7274ACE4B008165FE /* Pharmacy+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D511D1274ACE4B008165FE /* Pharmacy+CoreDataClass.swift */; };
+		88D511D8274ACE4B008165FE /* Pharmacy+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D511D2274ACE4B008165FE /* Pharmacy+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 		880D8277274A1E8900231AEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		880D827A274A1E8900231AEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		880D827C274A1E8900231AEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88D511CD274ACE4B008165FE /* Order+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Order+CoreDataClass.swift"; sourceTree = "<group>"; };
+		88D511CE274ACE4B008165FE /* Order+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Order+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		88D511CF274ACE4B008165FE /* Patient+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Patient+CoreDataClass.swift"; sourceTree = "<group>"; };
+		88D511D0274ACE4B008165FE /* Patient+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Patient+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		88D511D1274ACE4B008165FE /* Pharmacy+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pharmacy+CoreDataClass.swift"; sourceTree = "<group>"; };
+		88D511D2274ACE4B008165FE /* Pharmacy+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pharmacy+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +54,12 @@
 		880D825F274A1E8700231AEB = {
 			isa = PBXGroup;
 			children = (
+				88D511CD274ACE4B008165FE /* Order+CoreDataClass.swift */,
+				88D511CE274ACE4B008165FE /* Order+CoreDataProperties.swift */,
+				88D511CF274ACE4B008165FE /* Patient+CoreDataClass.swift */,
+				88D511D0274ACE4B008165FE /* Patient+CoreDataProperties.swift */,
+				88D511D1274ACE4B008165FE /* Pharmacy+CoreDataClass.swift */,
+				88D511D2274ACE4B008165FE /* Pharmacy+CoreDataProperties.swift */,
 				880D826A274A1E8700231AEB /* dawaay */,
 				880D8269274A1E8700231AEB /* Products */,
 			);
@@ -141,9 +159,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88D511D4274ACE4B008165FE /* Order+CoreDataProperties.swift in Sources */,
+				88D511D5274ACE4B008165FE /* Patient+CoreDataClass.swift in Sources */,
 				880D8270274A1E8700231AEB /* ViewController.swift in Sources */,
 				880D826C274A1E8700231AEB /* AppDelegate.swift in Sources */,
 				880D8276274A1E8700231AEB /* dawaay.xcdatamodeld in Sources */,
+				88D511D7274ACE4B008165FE /* Pharmacy+CoreDataClass.swift in Sources */,
+				88D511D3274ACE4B008165FE /* Order+CoreDataClass.swift in Sources */,
+				88D511D6274ACE4B008165FE /* Patient+CoreDataProperties.swift in Sources */,
+				88D511D8274ACE4B008165FE /* Pharmacy+CoreDataProperties.swift in Sources */,
 				880D826E274A1E8700231AEB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
