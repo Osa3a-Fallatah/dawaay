@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5AD510F2274B76E900E990DC /* MedicineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD510F1274B76E900E990DC /* MedicineVC.swift */; };
+		5AD510F4274B8BE000E990DC /* SignUpPatientVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD510F3274B8BE000E990DC /* SignUpPatientVC.swift */; };
 		880D826C274A1E8700231AEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880D826B274A1E8700231AEB /* AppDelegate.swift */; };
 		880D826E274A1E8700231AEB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880D826D274A1E8700231AEB /* SceneDelegate.swift */; };
 		880D8270274A1E8700231AEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880D826F274A1E8700231AEB /* ViewController.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5AD510F1274B76E900E990DC /* MedicineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineVC.swift; sourceTree = "<group>"; };
+		5AD510F3274B8BE000E990DC /* SignUpPatientVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPatientVC.swift; sourceTree = "<group>"; };
 		880D8268274A1E8700231AEB /* dawaay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dawaay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		880D826B274A1E8700231AEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		880D826D274A1E8700231AEB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,7 +55,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		880D825F274A1E8700231AEB = {
+		5AD510F0274AD74600E990DC /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
 				88D511CD274ACE4B008165FE /* Order+CoreDataClass.swift */,
@@ -60,6 +64,14 @@
 				88D511D0274ACE4B008165FE /* Patient+CoreDataProperties.swift */,
 				88D511D1274ACE4B008165FE /* Pharmacy+CoreDataClass.swift */,
 				88D511D2274ACE4B008165FE /* Pharmacy+CoreDataProperties.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		880D825F274A1E8700231AEB = {
+			isa = PBXGroup;
+			children = (
+				5AD510F0274AD74600E990DC /* CoreData */,
 				880D826A274A1E8700231AEB /* dawaay */,
 				880D8269274A1E8700231AEB /* Products */,
 			);
@@ -80,6 +92,8 @@
 				880D826D274A1E8700231AEB /* SceneDelegate.swift */,
 				880D826F274A1E8700231AEB /* ViewController.swift */,
 				880D8271274A1E8700231AEB /* Main.storyboard */,
+				5AD510F3274B8BE000E990DC /* SignUpPatientVC.swift */,
+				5AD510F1274B76E900E990DC /* MedicineVC.swift */,
 				880D8277274A1E8900231AEB /* Assets.xcassets */,
 				880D8279274A1E8900231AEB /* LaunchScreen.storyboard */,
 				880D827C274A1E8900231AEB /* Info.plist */,
@@ -163,9 +177,11 @@
 				88D511D5274ACE4B008165FE /* Patient+CoreDataClass.swift in Sources */,
 				880D8270274A1E8700231AEB /* ViewController.swift in Sources */,
 				880D826C274A1E8700231AEB /* AppDelegate.swift in Sources */,
+				5AD510F2274B76E900E990DC /* MedicineVC.swift in Sources */,
 				880D8276274A1E8700231AEB /* dawaay.xcdatamodeld in Sources */,
 				88D511D7274ACE4B008165FE /* Pharmacy+CoreDataClass.swift in Sources */,
 				88D511D3274ACE4B008165FE /* Order+CoreDataClass.swift in Sources */,
+				5AD510F4274B8BE000E990DC /* SignUpPatientVC.swift in Sources */,
 				88D511D6274ACE4B008165FE /* Patient+CoreDataProperties.swift in Sources */,
 				88D511D8274ACE4B008165FE /* Pharmacy+CoreDataProperties.swift in Sources */,
 				880D826E274A1E8700231AEB /* SceneDelegate.swift in Sources */,
@@ -245,7 +261,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -300,7 +316,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -317,20 +333,22 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = LK3PZ28UMW;
+				DEVELOPMENT_TEAM = TS4PZ2XB23;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = dawaay/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = camera;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Osama.dawaay;
+				PRODUCT_BUNDLE_IDENTIFIER = Mohammad.Alsharif.dawaay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -345,20 +363,22 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = LK3PZ28UMW;
+				DEVELOPMENT_TEAM = TS4PZ2XB23;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = dawaay/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = camera;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Osama.dawaay;
+				PRODUCT_BUNDLE_IDENTIFIER = Mohammad.Alsharif.dawaay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
