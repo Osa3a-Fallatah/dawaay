@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19206" systemVersion="21A559" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19461" systemVersion="21A559" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Order" representedClassName="Order" syncable="YES">
         <attribute name="orderDate" optional="YES" attributeType="String"/>
         <attribute name="orderId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
@@ -22,11 +22,11 @@
         <attribute name="password" optional="YES" attributeType="String"/>
         <attribute name="status" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="usename" optional="YES" attributeType="String"/>
-        <relationship name="requset" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Order" inverseName="requset" inverseEntity="Order"/>
+        <relationship name="requset" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Order" inverseName="requset" inverseEntity="Order"/>
     </entity>
     <elements>
-        <element name="Patient" positionX="-266.546875" positionY="-9" width="128" height="148"/>
         <element name="Order" positionX="107.828125" positionY="6.74609375" width="128" height="118"/>
+        <element name="Patient" positionX="-266.546875" positionY="-9" width="128" height="148"/>
         <element name="Pharmacy" positionX="88.0234375" positionY="214.99609375" width="128" height="133"/>
     </elements>
 </model>
