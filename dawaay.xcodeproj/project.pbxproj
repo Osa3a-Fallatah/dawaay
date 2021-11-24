@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A35517C274E274000E976AC /* SignUpPharmacyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A35517B274E274000E976AC /* SignUpPharmacyVC.swift */; };
 		5AD510F2274B76E900E990DC /* MedicineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD510F1274B76E900E990DC /* MedicineVC.swift */; };
 		5AD510F4274B8BE000E990DC /* SignUpPatientVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD510F3274B8BE000E990DC /* SignUpPatientVC.swift */; };
 		880D826C274A1E8700231AEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880D826B274A1E8700231AEB /* AppDelegate.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A35517B274E274000E976AC /* SignUpPharmacyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPharmacyVC.swift; sourceTree = "<group>"; };
 		5AD510F1274B76E900E990DC /* MedicineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineVC.swift; sourceTree = "<group>"; };
 		5AD510F3274B8BE000E990DC /* SignUpPatientVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPatientVC.swift; sourceTree = "<group>"; };
 		880D8268274A1E8700231AEB /* dawaay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dawaay.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +95,7 @@
 				880D826F274A1E8700231AEB /* ViewController.swift */,
 				880D8271274A1E8700231AEB /* Main.storyboard */,
 				5AD510F3274B8BE000E990DC /* SignUpPatientVC.swift */,
+				5A35517B274E274000E976AC /* SignUpPharmacyVC.swift */,
 				5AD510F1274B76E900E990DC /* MedicineVC.swift */,
 				880D8277274A1E8900231AEB /* Assets.xcassets */,
 				880D8279274A1E8900231AEB /* LaunchScreen.storyboard */,
@@ -179,6 +182,7 @@
 				880D826C274A1E8700231AEB /* AppDelegate.swift in Sources */,
 				5AD510F2274B76E900E990DC /* MedicineVC.swift in Sources */,
 				880D8276274A1E8700231AEB /* dawaay.xcdatamodeld in Sources */,
+				5A35517C274E274000E976AC /* SignUpPharmacyVC.swift in Sources */,
 				88D511D7274ACE4B008165FE /* Pharmacy+CoreDataClass.swift in Sources */,
 				88D511D3274ACE4B008165FE /* Order+CoreDataClass.swift in Sources */,
 				5AD510F4274B8BE000E990DC /* SignUpPatientVC.swift in Sources */,

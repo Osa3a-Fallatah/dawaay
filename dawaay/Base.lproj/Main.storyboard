@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gZA-8B-Inb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BVm-OP-X27">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -17,42 +17,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PO0-XJ-RXq">
-                                <rect key="frame" x="16" y="44" width="358" height="295"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Patient">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="55"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="Patient:" destination="gZA-8B-Inb" eventType="touchUpInside" id="30m-p7-ZIN"/>
-                                    <segue destination="BVm-OP-X27" kind="show" id="dJA-qg-Rqi"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qeU-IT-gXC">
-                                <rect key="frame" x="16" y="407" width="358" height="357"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Pharmcy">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="53"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="hnL-tC-8cM" kind="show" id="oly-hg-2fh"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="kAC-6o-O3u">
+                                <rect key="frame" x="0.0" y="44" width="390" height="766"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iTg-S7-0Pn">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="383"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pharmacy" translatesAutoresizingMaskIntoConstraints="NO" id="rGN-H3-E1T">
+                                        <rect key="frame" x="0.0" y="383" width="390" height="383"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="LCO-iv-C4S" appends="YES" id="EAT-2d-1ce"/>
+                                        </connections>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lFS-Bd-yyv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kAC-6o-O3u" firstAttribute="leading" secondItem="lFS-Bd-yyv" secondAttribute="leading" id="EAL-go-13M"/>
+                            <constraint firstItem="lFS-Bd-yyv" firstAttribute="bottom" secondItem="kAC-6o-O3u" secondAttribute="bottom" id="iQY-nY-Kfg"/>
+                            <constraint firstItem="kAC-6o-O3u" firstAttribute="top" secondItem="lFS-Bd-yyv" secondAttribute="top" id="rq8-3l-nOk"/>
+                            <constraint firstItem="lFS-Bd-yyv" firstAttribute="trailing" secondItem="kAC-6o-O3u" secondAttribute="trailing" id="val-Ud-I6u"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="pharmacyImg" destination="rGN-H3-E1T" id="dRJ-h1-HqC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Udv-Y0-hnN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="LCO-iv-C4S" userLabel="Pharmacy">
+                    <connections>
+                        <action selector="tapGesturePhrmacy:" destination="gZA-8B-Inb" id="CdF-Ub-PY1"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-4754" y="-597"/>
+            <point key="canvasLocation" x="-3672" y="-527"/>
         </scene>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="7Ks-dw-CDN">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="hnL-tC-8cM" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sigenUpPharmacyID" modalPresentationStyle="fullScreen" id="hnL-tC-8cM" customClass="SignUpPharmacyVC" customModule="dawaay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="T5a-Au-6J8">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -67,7 +73,7 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="ZOB-e3-FEc" kind="show" id="e1C-88-qqu"/>
+                                    <segue destination="ZOB-e3-FEc" kind="show" id="EKU-gF-R16"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gRn-F4-Se0">
@@ -105,11 +111,12 @@
                             <constraint firstItem="dKu-NB-z2D" firstAttribute="trailing" secondItem="xsJ-fp-DIr" secondAttribute="trailing" constant="50" id="wXF-lF-Ub9"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="kNu-Gd-mD3"/>
                     <navigationItem key="navigationItem" id="1RL-1Q-9uO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e4j-uZ-7cV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2460" y="-225"/>
+            <point key="canvasLocation" x="-2509" y="-225"/>
         </scene>
         <!--Orders-->
         <scene sceneID="FIu-4w-c5T">
@@ -132,7 +139,7 @@
             <objects>
                 <viewController id="IJN-oD-fZh" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="36b-eD-J1k">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="WVj-oy-cjC"/>
                         <color key="backgroundColor" red="0.86689406633377075" green="0.92167383432388306" blue="0.96241253614425659" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -178,7 +185,6 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="IJN-oD-fZh" kind="relationship" relationship="viewControllers" id="ml6-Yw-8LC"/>
                         <segue destination="ZYn-lE-0hD" kind="relationship" relationship="viewControllers" id="Sja-qI-Ef6"/>
                     </connections>
                 </tabBarController>
@@ -223,7 +229,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="signUpPatient:" destination="BVm-OP-X27" eventType="touchUpInside" id="hZe-Sd-Gmr"/>
-                                    <segue destination="EL6-3o-d91" kind="show" id="ol6-rF-5lt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -259,7 +264,7 @@
             <objects>
                 <viewController id="oC7-Rs-URJ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Te5-FA-Fhk">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="tjN-sv-JSj"/>
                         <color key="backgroundColor" red="0.93333339689999995" green="0.88235294819999999" blue="0.96862745289999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -276,21 +281,21 @@
             <objects>
                 <viewController storyboardIdentifier="PatientID" modalPresentationStyle="fullScreen" id="YeN-MR-B5U" customClass="MedicineVC" customModule="dawaay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BSF-PR-HRq">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tAv-yn-JN4">
-                                <rect key="frame" x="16" y="76" width="358" height="404"/>
+                                <rect key="frame" x="16" y="108" width="358" height="392"/>
                                 <color key="backgroundColor" red="0.86689406629999999" green="0.92167383430000005" blue="0.96241253609999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="optional" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p2p-Gi-NRe">
-                                <rect key="frame" x="50" y="640" width="290" height="34"/>
+                                <rect key="frame" x="50" y="660" width="290" height="34"/>
                                 <color key="backgroundColor" red="0.86689406629999999" green="0.92167383430000005" blue="0.96241253609999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9Q-uX-fpb">
-                                <rect key="frame" x="100" y="709" width="190" height="38"/>
+                                <rect key="frame" x="100" y="729" width="190" height="38"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Done">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
@@ -300,7 +305,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOf-7K-usJ">
-                                <rect key="frame" x="20" y="540" width="350" height="38"/>
+                                <rect key="frame" x="20" y="560" width="350" height="38"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Take Photo">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
@@ -360,6 +365,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Pharmacy" width="375" height="289.33334350585938"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
