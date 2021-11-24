@@ -8,12 +8,24 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var pharmacyImg: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        pharmacyImg.isUserInteractionEnabled = true
+        
+        let pharmacy = UIGestureRecognizer(target: self, action: #selector(tapGesturePhrmacy(_:)))
     }
-
+    
+    @IBAction func tapGesturePhrmacy(_ sender: UITapGestureRecognizer) {
+        print("Pharmacy")
+        let pharmacyVC = storyboard?.instantiateViewController(withIdentifier: "sigenUpPharmacyID") as! SignUpPharmacyVC
+        present(pharmacyVC, animated: true, completion: nil)
+        
+    }
+    
 
 }
 
