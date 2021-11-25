@@ -20,8 +20,8 @@ class SignUpPatientVC: UIViewController {
     
     @IBAction func signUpPatient(_ sender: UIButton) {
         if (userNamePatient.text?.count != 0) && (phoneNumberPatient.text?.count != 0) && (passwordPatient.text?.count != 0) {
-            let medicineVC = storyboard?.instantiateViewController(withIdentifier: "PatientID") as! MedicineVC
-            present(medicineVC, animated: true, completion: nil)
+            let patientLoginVC = storyboard?.instantiateViewController(withIdentifier: "LoginPatientID") as! LoginPatientVC
+            present(patientLoginVC, animated: true, completion: nil)
         } else {
             print("not allowed")
         }
