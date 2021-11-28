@@ -20,8 +20,9 @@
 		880D827B274A1E8900231AEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 880D8279274A1E8900231AEB /* LaunchScreen.storyboard */; };
 		881AC27B274FC8740044FBA2 /* PatientTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881AC27A274FC8740044FBA2 /* PatientTable.swift */; };
 		8821E61A27501EC4006B961B /* ShowOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8821E61927501EC4006B961B /* ShowOrderView.swift */; };
-		AC00E28E274AD4A0003630AF /* OrderDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC00E28C274AD4A0003630AF /* OrderDetailsCell.swift */; };
-		AC00E28F274AD4A0003630AF /* OrderDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC00E28D274AD4A0003630AF /* OrderDetailsCell.xib */; };
+		882E55D82751EB050024DCC9 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882E55D72751EB050024DCC9 /* ResultViewController.swift */; };
+		882E55E72752092F0024DCC9 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882E55E52752092F0024DCC9 /* CollectionCell.swift */; };
+		882E55E82752092F0024DCC9 /* CollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 882E55E62752092F0024DCC9 /* CollectionCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,9 +41,9 @@
 		880D827C274A1E8900231AEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		881AC27A274FC8740044FBA2 /* PatientTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientTable.swift; sourceTree = "<group>"; };
 		8821E61927501EC4006B961B /* ShowOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowOrderView.swift; sourceTree = "<group>"; };
-		AC00E28C274AD4A0003630AF /* OrderDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsCell.swift; sourceTree = "<group>"; };
-		AC00E28D274AD4A0003630AF /* OrderDetailsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderDetailsCell.xib; sourceTree = "<group>"; };
-		AC18683C274D72140076DC95 /* PatientRequestTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientRequestTable.swift; sourceTree = "<group>"; };
+		882E55D72751EB050024DCC9 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		882E55E52752092F0024DCC9 /* CollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
+		882E55E62752092F0024DCC9 /* CollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +60,11 @@
 		880B3E9F27501BD700F66F1B /* New Group */ = {
 			isa = PBXGroup;
 			children = (
+				5AD510F1274B76E900E990DC /* MedicineVC.swift */,
 				881AC27A274FC8740044FBA2 /* PatientTable.swift */,
+				882E55E62752092F0024DCC9 /* CollectionCell.xib */,
+				882E55E52752092F0024DCC9 /* CollectionCell.swift */,
+				882E55D72751EB050024DCC9 /* ResultViewController.swift */,
 				8821E61927501EC4006B961B /* ShowOrderView.swift */,
 			);
 			path = "New Group";
@@ -68,6 +73,8 @@
 		880D825F274A1E8700231AEB = {
 			isa = PBXGroup;
 			children = (
+				880D826B274A1E8700231AEB /* AppDelegate.swift */,
+				880D826D274A1E8700231AEB /* SceneDelegate.swift */,
 				880B3E9F27501BD700F66F1B /* New Group */,
 				880D826A274A1E8700231AEB /* dawaay */,
 				880D8269274A1E8700231AEB /* Products */,
@@ -86,6 +93,7 @@
 		880D826A274A1E8700231AEB /* dawaay */ = {
 			isa = PBXGroup;
 			children = (
+
 				5A355187274F942200E976AC /* ShowOrderVC.swift */,
 				880D826B274A1E8700231AEB /* AppDelegate.swift */,
 				880D826D274A1E8700231AEB /* SceneDelegate.swift */,
@@ -95,9 +103,6 @@
 				5AD510F3274B8BE000E990DC /* SignUpPatientVC.swift */,
 				5A35517F274F727600E976AC /* LoginPatientVC.swift */,
 				5A355181274F732900E976AC /* LoginPharmacyVC.swift */,
-				5AD510F1274B76E900E990DC /* MedicineVC.swift */,
-				AC00E28C274AD4A0003630AF /* OrderDetailsCell.swift */,
-				AC00E28D274AD4A0003630AF /* OrderDetailsCell.xib */,
 				880D8277274A1E8900231AEB /* Assets.xcassets */,
 				880D8279274A1E8900231AEB /* LaunchScreen.storyboard */,
 				880D827C274A1E8900231AEB /* Info.plist */,
@@ -171,10 +176,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				882E55E82752092F0024DCC9 /* CollectionCell.xib in Resources */,
 				880D827B274A1E8900231AEB /* LaunchScreen.storyboard in Resources */,
 				880D8278274A1E8900231AEB /* Assets.xcassets in Resources */,
 				880D8273274A1E8700231AEB /* Main.storyboard in Resources */,
-				AC00E28F274AD4A0003630AF /* OrderDetailsCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,17 +190,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				882E55D82751EB050024DCC9 /* ResultViewController.swift in Sources */,
 				880D8270274A1E8700231AEB /* ViewController.swift in Sources */,
 				880D826C274A1E8700231AEB /* AppDelegate.swift in Sources */,
 				5AD510F2274B76E900E990DC /* MedicineVC.swift in Sources */,
 				5A355182274F732900E976AC /* LoginPharmacyVC.swift in Sources */,
 				880D8276274A1E8700231AEB /* dawaay.xcdatamodeld in Sources */,
 				8821E61A27501EC4006B961B /* ShowOrderView.swift in Sources */,
-				AC00E28E274AD4A0003630AF /* OrderDetailsCell.swift in Sources */,
 				881AC27B274FC8740044FBA2 /* PatientTable.swift in Sources */,
 				5A355180274F727600E976AC /* LoginPatientVC.swift in Sources */,
 				5AD510F4274B8BE000E990DC /* SignUpPatientVC.swift in Sources */,
 				880D826E274A1E8700231AEB /* SceneDelegate.swift in Sources */,
+				882E55E72752092F0024DCC9 /* CollectionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

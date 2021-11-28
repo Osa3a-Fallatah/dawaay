@@ -5,7 +5,7 @@
         <attribute name="orderDate" optional="YES" attributeType="String"/>
         <attribute name="orderId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="quantity" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="sataus" optional="YES" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES"/>
+        <attribute name="sataus" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
         <relationship name="linkToPatient" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Patient" inverseName="linkToOrder" inverseEntity="Patient"/>
     </entity>
     <entity name="Patient" representedClassName="Patient" syncable="YES" codeGenerationType="class">
@@ -16,7 +16,7 @@
         <relationship name="linkToOrder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Order" inverseName="linkToPatient" inverseEntity="Order"/>
     </entity>
     <elements>
-        <element name="Order" positionX="107.828125" positionY="6.74609375" width="128" height="119"/>
+        <element name="Order" positionX="107.828125" positionY="6.74609375" width="128" height="133"/>
         <element name="Patient" positionX="-266.546875" positionY="-9" width="128" height="104"/>
     </elements>
 </model>
