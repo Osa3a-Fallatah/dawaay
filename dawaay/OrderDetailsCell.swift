@@ -13,10 +13,9 @@ class OrderDetailsCell: UITableViewCell {
     
     @IBOutlet weak var OrderName: UILabel!
     
-    @IBOutlet weak var OrderDescription: UILabel!
-  
+    @IBOutlet weak var IdNumber: UILabel!
     @IBOutlet weak var Date: UILabel!
-    
+    @IBOutlet weak var Quantity: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

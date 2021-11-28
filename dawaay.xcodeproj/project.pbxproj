@@ -78,6 +78,7 @@
 				880B3E9F27501BD700F66F1B /* New Group */,
 				880D826A274A1E8700231AEB /* dawaay */,
 				880D8269274A1E8700231AEB /* Products */,
+				AC186842274FB9AF0076DC95 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +93,11 @@
 		880D826A274A1E8700231AEB /* dawaay */ = {
 			isa = PBXGroup;
 			children = (
+
+				5A355187274F942200E976AC /* ShowOrderVC.swift */,
+				880D826B274A1E8700231AEB /* AppDelegate.swift */,
+				880D826D274A1E8700231AEB /* SceneDelegate.swift */,
+				AC18683C274D72140076DC95 /* PatientRequestTable.swift */,
 				880D826F274A1E8700231AEB /* ViewController.swift */,
 				880D8271274A1E8700231AEB /* Main.storyboard */,
 				5AD510F3274B8BE000E990DC /* SignUpPatientVC.swift */,
@@ -103,6 +109,13 @@
 				880D8274274A1E8700231AEB /* dawaay.xcdatamodeld */,
 			);
 			path = dawaay;
+			sourceTree = "<group>";
+		};
+		AC186842274FB9AF0076DC95 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
