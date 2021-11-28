@@ -11,6 +11,7 @@ the patient:
 - As user, I can write my information and delivery location
 
 Pharmacy:
+
 As a pharmacy, I am able to sign in
 As a pharmacy, I am able to see the patient's requests
 As a pharmacy, I am able to approve/reject medication request
