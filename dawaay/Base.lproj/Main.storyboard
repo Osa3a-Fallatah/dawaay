@@ -351,7 +351,7 @@
         <!--Patient-->
         <scene sceneID="FBQ-6T-BUq">
             <objects>
-                <viewController storyboardIdentifier="PatientTable" modalPresentationStyle="fullScreen" id="IJN-oD-fZh" customClass="PatientTable" customModule="dawaay" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PatientTable" modalPresentationStyle="fullScreen" id="IJN-oD-fZh" customClass="OrdersTable" customModule="dawaay" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="36b-eD-J1k">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -414,26 +414,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="user name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WW3-sX-EOP">
-                                <rect key="frame" x="50" y="292.66666666666669" width="290" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="user name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WW3-sX-EOP">
+                                <rect key="frame" x="50" y="293" width="290" height="34"/>
                                 <color key="backgroundColor" red="0.86689406633377075" green="0.92167383432388306" blue="0.96241253614425659" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rkS-v5-l2l">
-                                <rect key="frame" x="50" y="366.66666666666669" width="290" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rkS-v5-l2l">
+                                <rect key="frame" x="50" y="367" width="290" height="34"/>
                                 <color key="backgroundColor" red="0.86689406633377075" green="0.92167383432388306" blue="0.96241253614425659" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ILv-b3-8sF">
-                                <rect key="frame" x="50" y="440.66666666666669" width="290" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ILv-b3-8sF">
+                                <rect key="frame" x="50" y="441" width="290" height="34"/>
                                 <color key="backgroundColor" red="0.86689406629999999" green="0.92167383430000005" blue="0.96241253609999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CwJ-cF-dbo">
-                                <rect key="frame" x="95" y="574.66666666666663" width="200" height="41.666666666666629"/>
+                                <rect key="frame" x="95" y="659" width="200" height="41.666666666666629"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="WiR-J6-uvk"/>
                                 </constraints>
@@ -446,19 +446,28 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sign up for Patient" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9oj-Ih-Lnq">
-                                <rect key="frame" x="40" y="178" width="310" height="34.666666666666657"/>
+                                <rect key="frame" x="40" y="178" width="310" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="location" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q2W-vq-ei5">
+                                <rect key="frame" x="50" y="545" width="290" height="34"/>
+                                <color key="backgroundColor" red="0.86689406633377075" green="0.92167383432388306" blue="0.96241253614425659" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ajL-kM-sqg"/>
                         <color key="backgroundColor" name="selectedMenuItemTextColor" catalog="System" colorSpace="catalog"/>
                         <constraints>
                             <constraint firstItem="9oj-Ih-Lnq" firstAttribute="leading" secondItem="ajL-kM-sqg" secondAttribute="leading" constant="40" id="0Z3-uz-MV2"/>
                             <constraint firstItem="ajL-kM-sqg" firstAttribute="trailing" secondItem="CwJ-cF-dbo" secondAttribute="trailing" constant="95" id="32r-9V-wyG"/>
+                            <constraint firstItem="q2W-vq-ei5" firstAttribute="leading" secondItem="ajL-kM-sqg" secondAttribute="leading" constant="50" id="7Oa-w3-tpF"/>
                             <constraint firstItem="ajL-kM-sqg" firstAttribute="trailing" secondItem="rkS-v5-l2l" secondAttribute="trailing" constant="50" id="Bmw-pB-V4z"/>
                             <constraint firstItem="CwJ-cF-dbo" firstAttribute="leading" secondItem="ajL-kM-sqg" secondAttribute="leading" constant="95" id="CA2-kQ-nmz"/>
+                            <constraint firstItem="q2W-vq-ei5" firstAttribute="top" secondItem="ILv-b3-8sF" secondAttribute="bottom" constant="70" id="CC5-VZ-yWw"/>
+                            <constraint firstItem="CwJ-cF-dbo" firstAttribute="top" secondItem="q2W-vq-ei5" secondAttribute="bottom" constant="80" id="EKO-G2-tR6"/>
                             <constraint firstItem="ajL-kM-sqg" firstAttribute="trailing" secondItem="ILv-b3-8sF" secondAttribute="trailing" constant="50" id="Nxu-HH-q59"/>
                             <constraint firstItem="rkS-v5-l2l" firstAttribute="top" secondItem="WW3-sX-EOP" secondAttribute="bottom" constant="40" id="PKC-K7-Jje"/>
                             <constraint firstItem="ajL-kM-sqg" firstAttribute="trailing" secondItem="9oj-Ih-Lnq" secondAttribute="trailing" constant="40" id="Zgc-zJ-bRP"/>
@@ -466,14 +475,15 @@
                             <constraint firstItem="rkS-v5-l2l" firstAttribute="leading" secondItem="ajL-kM-sqg" secondAttribute="leading" constant="50" id="bb1-O0-Ofs"/>
                             <constraint firstItem="ILv-b3-8sF" firstAttribute="leading" secondItem="ajL-kM-sqg" secondAttribute="leading" constant="50" id="cwi-e6-uKz"/>
                             <constraint firstItem="WW3-sX-EOP" firstAttribute="top" secondItem="9oj-Ih-Lnq" secondAttribute="bottom" constant="80" id="d0Q-3e-t7V"/>
-                            <constraint firstItem="CwJ-cF-dbo" firstAttribute="top" secondItem="ILv-b3-8sF" secondAttribute="bottom" constant="100" id="h76-sk-b8O"/>
                             <constraint firstItem="ajL-kM-sqg" firstAttribute="trailing" secondItem="WW3-sX-EOP" secondAttribute="trailing" constant="50" id="lZd-rx-CZB"/>
                             <constraint firstItem="9oj-Ih-Lnq" firstAttribute="top" secondItem="ajL-kM-sqg" secondAttribute="top" constant="90" id="rY3-Uo-gQB"/>
                             <constraint firstItem="WW3-sX-EOP" firstAttribute="leading" secondItem="ajL-kM-sqg" secondAttribute="leading" constant="50" id="u9d-bc-mD2"/>
+                            <constraint firstItem="ajL-kM-sqg" firstAttribute="trailing" secondItem="q2W-vq-ei5" secondAttribute="trailing" constant="50" id="yKF-LM-akJ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Tzh-RJ-CJC"/>
                     <connections>
+                        <outlet property="locationPatient" destination="q2W-vq-ei5" id="3eZ-mT-YY5"/>
                         <outlet property="passwordPatient" destination="ILv-b3-8sF" id="Hvf-Eo-cCi"/>
                         <outlet property="phoneNumberPatient" destination="rkS-v5-l2l" id="McJ-Uy-B3u"/>
                         <outlet property="userNamePatient" destination="WW3-sX-EOP" id="ph1-aX-McX"/>
@@ -481,18 +491,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0f3-Js-u4W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-369" y="-966"/>
+            <point key="canvasLocation" x="-369.23076923076923" y="-966.11374407582935"/>
         </scene>
         <!--Orders-->
         <scene sceneID="YpM-73-gLu">
             <objects>
-                <viewController storyboardIdentifier="PatientID" modalPresentationStyle="fullScreen" id="YeN-MR-B5U" customClass="MedicineVC" customModule="dawaay" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PatientID" modalPresentationStyle="fullScreen" id="YeN-MR-B5U" customClass="PatientRequests" customModule="dawaay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BSF-PR-HRq">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tAv-yn-JN4">
-                                <rect key="frame" x="16" y="148.66666666666666" width="358" height="353.33333333333337"/>
+                                <rect key="frame" x="16" y="149" width="358" height="353"/>
                                 <color key="backgroundColor" red="0.86689406629999999" green="0.92167383430000005" blue="0.96241253609999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9Q-uX-fpb">
@@ -517,7 +527,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take a picture of the medicine" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odi-to-Brc">
-                                <rect key="frame" x="10" y="84" width="370" height="34.666666666666657"/>
+                                <rect key="frame" x="10" y="84" width="370" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

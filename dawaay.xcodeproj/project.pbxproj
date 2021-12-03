@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		5A355180274F727600E976AC /* LoginPatientVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A35517F274F727600E976AC /* LoginPatientVC.swift */; };
 		5A355182274F732900E976AC /* LoginPharmacyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A355181274F732900E976AC /* LoginPharmacyVC.swift */; };
-		5AD510F2274B76E900E990DC /* MedicineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD510F1274B76E900E990DC /* MedicineVC.swift */; };
+		5AD510F2274B76E900E990DC /* PatientRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD510F1274B76E900E990DC /* PatientRequests.swift */; };
 		5AD510F4274B8BE000E990DC /* SignUpPatientVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD510F3274B8BE000E990DC /* SignUpPatientVC.swift */; };
 		880D826C274A1E8700231AEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880D826B274A1E8700231AEB /* AppDelegate.swift */; };
 		880D826E274A1E8700231AEB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880D826D274A1E8700231AEB /* SceneDelegate.swift */; };
@@ -18,7 +18,7 @@
 		880D8276274A1E8700231AEB /* dawaay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 880D8274274A1E8700231AEB /* dawaay.xcdatamodeld */; };
 		880D8278274A1E8900231AEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 880D8277274A1E8900231AEB /* Assets.xcassets */; };
 		880D827B274A1E8900231AEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 880D8279274A1E8900231AEB /* LaunchScreen.storyboard */; };
-		881AC27B274FC8740044FBA2 /* PatientTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881AC27A274FC8740044FBA2 /* PatientTable.swift */; };
+		881AC27B274FC8740044FBA2 /* OrdersTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881AC27A274FC8740044FBA2 /* OrdersTable.swift */; };
 		8821E61A27501EC4006B961B /* ShowOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8821E61927501EC4006B961B /* ShowOrderView.swift */; };
 		882E55D82751EB050024DCC9 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882E55D72751EB050024DCC9 /* ResultViewController.swift */; };
 		882E55E72752092F0024DCC9 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882E55E52752092F0024DCC9 /* CollectionCell.swift */; };
@@ -28,7 +28,7 @@
 /* Begin PBXFileReference section */
 		5A35517F274F727600E976AC /* LoginPatientVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPatientVC.swift; sourceTree = "<group>"; };
 		5A355181274F732900E976AC /* LoginPharmacyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPharmacyVC.swift; sourceTree = "<group>"; };
-		5AD510F1274B76E900E990DC /* MedicineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineVC.swift; sourceTree = "<group>"; };
+		5AD510F1274B76E900E990DC /* PatientRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientRequests.swift; sourceTree = "<group>"; };
 		5AD510F3274B8BE000E990DC /* SignUpPatientVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPatientVC.swift; sourceTree = "<group>"; };
 		880D8268274A1E8700231AEB /* dawaay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dawaay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		880D826B274A1E8700231AEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,7 +39,7 @@
 		880D8277274A1E8900231AEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		880D827A274A1E8900231AEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		880D827C274A1E8900231AEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		881AC27A274FC8740044FBA2 /* PatientTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientTable.swift; sourceTree = "<group>"; };
+		881AC27A274FC8740044FBA2 /* OrdersTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTable.swift; sourceTree = "<group>"; };
 		8821E61927501EC4006B961B /* ShowOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowOrderView.swift; sourceTree = "<group>"; };
 		882E55D72751EB050024DCC9 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		882E55E52752092F0024DCC9 /* CollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
@@ -60,8 +60,8 @@
 		880B3E9F27501BD700F66F1B /* New Group */ = {
 			isa = PBXGroup;
 			children = (
-				5AD510F1274B76E900E990DC /* MedicineVC.swift */,
-				881AC27A274FC8740044FBA2 /* PatientTable.swift */,
+				5AD510F1274B76E900E990DC /* PatientRequests.swift */,
+				881AC27A274FC8740044FBA2 /* OrdersTable.swift */,
 				882E55E62752092F0024DCC9 /* CollectionCell.xib */,
 				882E55E52752092F0024DCC9 /* CollectionCell.swift */,
 				882E55D72751EB050024DCC9 /* ResultViewController.swift */,
@@ -93,11 +93,6 @@
 		880D826A274A1E8700231AEB /* dawaay */ = {
 			isa = PBXGroup;
 			children = (
-
-				5A355187274F942200E976AC /* ShowOrderVC.swift */,
-				880D826B274A1E8700231AEB /* AppDelegate.swift */,
-				880D826D274A1E8700231AEB /* SceneDelegate.swift */,
-				AC18683C274D72140076DC95 /* PatientRequestTable.swift */,
 				880D826F274A1E8700231AEB /* ViewController.swift */,
 				880D8271274A1E8700231AEB /* Main.storyboard */,
 				5AD510F3274B8BE000E990DC /* SignUpPatientVC.swift */,
@@ -193,11 +188,11 @@
 				882E55D82751EB050024DCC9 /* ResultViewController.swift in Sources */,
 				880D8270274A1E8700231AEB /* ViewController.swift in Sources */,
 				880D826C274A1E8700231AEB /* AppDelegate.swift in Sources */,
-				5AD510F2274B76E900E990DC /* MedicineVC.swift in Sources */,
+				5AD510F2274B76E900E990DC /* PatientRequests.swift in Sources */,
 				5A355182274F732900E976AC /* LoginPharmacyVC.swift in Sources */,
 				880D8276274A1E8700231AEB /* dawaay.xcdatamodeld in Sources */,
 				8821E61A27501EC4006B961B /* ShowOrderView.swift in Sources */,
-				881AC27B274FC8740044FBA2 /* PatientTable.swift in Sources */,
+				881AC27B274FC8740044FBA2 /* OrdersTable.swift in Sources */,
 				5A355180274F727600E976AC /* LoginPatientVC.swift in Sources */,
 				5AD510F4274B8BE000E990DC /* SignUpPatientVC.swift in Sources */,
 				880D826E274A1E8700231AEB /* SceneDelegate.swift in Sources */,

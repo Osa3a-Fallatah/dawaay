@@ -13,7 +13,7 @@ protocol passDataBack{
     func updateRow(staus:Bool)
 }
 class ShowOrderView: UIViewController {
-    var test = PatientTable()
+    var test = OrdersTable()
     var delegate:passDataBack!
     var patientObj = Patient()
     
@@ -25,23 +25,23 @@ class ShowOrderView: UIViewController {
     @IBOutlet weak var phoneLable: UILabel!
     @IBOutlet weak var statusSwitch: UISwitch!
     @IBAction func confirmButton(_ sender: Any) {
-       
-            let alert = UIAlertController(title: "Change Status ", message: nil, preferredStyle: .alert)
-                    let saveAction = UIAlertAction(title: "Save", style: .default, handler: { action in
-                        
-                        self.patientObj.linkToOrder?.sataus = self.statusSwitch.isOn
-                        print(self.statusSwitch.isOn)
-                        try! context.save()
- 
-                    })
-                    
-                    let cancelAction = UIAlertAction(title: "Cancel", style: .default, handler: nil)
-                    //
-                    alert.addAction(saveAction)
-                    alert.addAction(cancelAction)
-                    present(alert, animated: true, completion: nil)
-     
-}
+        
+        let alert = UIAlertController(title: "Change Status ", message: nil, preferredStyle: .alert)
+        let saveAction = UIAlertAction(title: "Save", style: .default, handler: { action in
+            
+            self.patientObj.linkToOrder?.sataus = self.statusSwitch.isOn
+            print(self.statusSwitch.isOn)
+            try! context.save()
+            
+        })
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .default, handler: nil)
+        //
+        alert.addAction(saveAction)
+        alert.addAction(cancelAction)
+        present(alert, animated: true, completion: nil)
+        
+    }
     
     var orderPicture = "no info"
     var orderStaus = false
@@ -63,9 +63,9 @@ class ShowOrderView: UIViewController {
         phoneLable.text = String(patientPhone)
         statusSwitch.isOn = orderStaus
         print(indxpath)
-       
+        
     }
-   
+    
     @IBAction func logout(_ sender: Any) {
         let trancfer = storyboard?.instantiateViewController(withIdentifier: "mainPage") as! ViewController
         present(trancfer, animated: false, completion: nil)
